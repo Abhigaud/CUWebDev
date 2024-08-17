@@ -1,2 +1,2 @@
 # CUWebDev
-This repository Contains Code files Of Chandigarh University, Web Programming Curriculum
+This repository Contains Code files Of Chandigarh University, Web Programming Curriculum.
