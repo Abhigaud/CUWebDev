@@ -9,7 +9,11 @@
 <body>
     <h2>2</h2>
 <?php
+
     $displayName = $_GET['displayName'];
+    $cookieName = "displayName";
+    $cookieValue = $displayName;
+    setCookie($cookieName, $cookieValue, time()+30);
 ?>
 <h1>Welcome <?=$displayName ?> in Web Development on Second Page</h1>
 
@@ -21,10 +25,10 @@
             <input type="text" id="city" name= "city" placeholder="Enter City name">
         </p>
     </fieldset>
-    <input name="displayName" type="hidden" value="<?=$displayName?>" >
 
     <p><input type="submit">  <input type="reset"></p>
 </form>
 
+<!-- comment -->
 </body>
 </html>
