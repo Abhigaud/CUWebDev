@@ -9,12 +9,11 @@
 <body>
     <h2>3</h2>
 <?php
-    $displayName = $_GET['displayName'];
+    $displayName = $_COOKIE['displayName'];
     $city = $_GET['city'];
 ?>
 <h1>Welcome <?=$displayName ?> in Web Development on Third Page from <?= $city?></h1>
 
-]
 
 </body>
 </html>

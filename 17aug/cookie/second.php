@@ -8,8 +8,9 @@
 
 <body>
     <h2>2</h2>
-<?php
 
+
+<?php
     $displayName = $_GET['displayName'];
     $cookieName = "displayName";
     $cookieValue = $displayName;
@@ -27,8 +28,6 @@
     </fieldset>
 
     <p><input type="submit">  <input type="reset"></p>
-</form>
-
-<!-- comment -->
+</form> 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>first page</title>
 </head>
 <body>
     <h2>1</h2>
@@ -13,7 +13,7 @@
             <legend>Enquiry Form </legend>
             <p>
                 <label for="input_text">Name: </label>
-                <input type="text" id="input_text" name= "displayName" placeholder="Enter display name">
+                <input type="text" id="displayName" name= "displayName" placeholder="Enter display name">
             </p>
         </fieldset>
         <p><input type="submit">  <input type="reset"></p>
