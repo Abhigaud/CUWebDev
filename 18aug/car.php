@@ -31,8 +31,9 @@ class car{
     $secondCar -> name = "Tata";
     $secondCar -> color = "Red";
 
+    echo $secondCar -> name. PHP_EOL;
     $firstCar -> sayHello();
-    
+
 
 ?>
 
