@@ -20,8 +20,15 @@
     }
     echo "Connected Succesfuly <br>";
 
-    $sql = "select * from car";
-    $result = mysqli_query($conn, $sql);
+    $sql1 = "insert INTO car(ID, Name, color) values('6', 'Sujuki', 'white')";
+    // $result = mysqli_query($conn, $sql);
+    
+    if(mysqli_query($conn, $sql1)){
+        echo "record inserted succesfully <br>";
+    }
+    
+    $sql2 = "select * from car";
+    $result = mysqli_query($conn, $sql2);
 
     echo mysqli_num_rows($result);
 
