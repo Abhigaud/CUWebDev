@@ -18,9 +18,16 @@
     if(!$conn){
 
     }
-    echo "Connected Succesfuly";
+    echo "Connected Succesfuly <br>";
 
-    
+    $sql = "select * from car";
+    $result = mysqli_query($conn, $sql);
+
+    echo mysqli_num_rows($result);
+
+    while($row = mysqli_fetch_assoc($result)){
+        echo "car id: ".$row['ID']." car name : ".$row['Name']." car color : ".$row['color']."<br>";
+    }
 
     mysqli_close($conn);
 
