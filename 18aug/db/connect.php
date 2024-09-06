@@ -20,8 +20,10 @@
     }
     echo "Connected Succesfuly <br>";
 
+    $updatedName = $_GET['Name'];
+
     // $sql1 = "insert INTO car(ID, Name, color) values('6', 'Sujuki', 'white')";
-    $sql1 = "update car set ID = '7' where Name = 'Sujuki'";
+    $sql1 = "update car set ID = '7' where Name = '$updatedName'";
     // $result = mysqli_query($conn, $sql);
     
     if(mysqli_query($conn, $sql1)){
