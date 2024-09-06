@@ -34,6 +34,6 @@ class car{
     echo $secondCar -> name. PHP_EOL;
     $firstCar -> sayHello();
 
-// Comment
+
 ?>
 
