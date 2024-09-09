@@ -11,19 +11,23 @@
 
     <br>
 
-    First text : <input type="text" onkeyup="doMyTask()">
+    First text : <input type="text" onkeyup="doMyTask(this.value)">
     <button type="button" onclick="doMyTask()">Click me</button>
 
 
     <script>
-        function doMyTask(){
+        function doMyTask(str){
+
+            if(str.length>2){
+
+            
+
             // Connect to server
             const xhttp = new XMLHttpRequest();
             xhttp.onload = function() {
-                
                 document.getElementById("demo").innerHTML= this.responseText;
             }
-            xhttp.open("GET", "hint.php");
+            xhttp.open("GET", "hint.php?q="+str);
 
             // Sent the request to the server
             xhttp.send();
@@ -33,6 +37,7 @@
             // Populate the data which is being received by the client 
 
             document.getElementById("demo").innerHTML= "this is updated content";
+        }
 
         }
     </script>
